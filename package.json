@@ -25,5 +25,8 @@
     "gulp-minify-html": "^1.0.6",
     "gulp-rename": "^1.4.0",
     "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
   }
 }
