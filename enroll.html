@@ -151,7 +151,11 @@
 						var json = JSON.parse(str);
 						if(json.err == '0'){
 							alert(json.msg);
+<<<<<<< HEAD
 							localStorage.setItem(uname.value,' ');
+=======
+							localStorage.setItem(uname.value,'1');
+>>>>>>> 664f9ec8b30adb7a1d1fff79af7dd49269240fd3
 							window.open('index.html');
 						}else{
 							alert(json.msg);
