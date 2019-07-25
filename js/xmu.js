@@ -278,7 +278,7 @@ var $b_rhead = $('.b_rhead')
     if(getIt){
         $b_rhead.html(`<li>你好<a href="enroll.html">${getIt}</a></li>
         <li><a href="#" class='b_zhuce'>退出登录</a> </li>
-        <li><a href="#"><em class="iconfont iconhuiyuan"></em> 会员俱乐部</a></li>
+        <li><a href="vip.html"><em class="iconfont iconhuiyuan"></em> 会员俱乐部</a></li>
         <li><a href="#"><em class="iconfont icondingdan"></em> 我的订单</a></li>`)
     }
 
@@ -287,6 +287,6 @@ var $b_rhead = $('.b_rhead')
         localStorage.removeItem(getIt);
         $b_rhead.html(`<li>你好请:<a href="enroll.html">登录</a></li>
         <li><a href="login.html">注册</a> </li>
-        <li><a href="#"><em class="iconfont iconhuiyuan"></em> 会员俱乐部</a></li>
+        <li><a href="vip.html"><em class="iconfont iconhuiyuan"></em> 会员俱乐部</a></li>
         <li><a href="#"><em class="iconfont icondingdan"></em> 我的订单</a></li>`);
     })
