@@ -272,5 +272,3 @@ $('.pao-3 ul li:nth-child(3)').mouseover(function() {
 $('.pao-3 ul li:nth-child(3)').mouseout(function() {
     $(this).css('background', '')
 });
-
-
