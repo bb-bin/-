@@ -98,4 +98,62 @@ hbox.onmouseover = function(){
 // 移入移出
 
 
+var getIt = localStorage.key(0);
+var $b_rhead = $('.b_rhead')
+    if(getIt){
+        $b_rhead.html(`<li class="mlogin">
+        <span>你好</span>
+        <a href="enroll.html">${getIt}</a>
+    </li>
+    <li class="mlogon b_zhuce">
+        <a href="#">退出登录</a>
+    </li>
+    <li>
+        <a href="vip.html">
+            <span class="iconfont iconhuiyuan"></span>
+            <span>会员俱乐部</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span class="iconfont icondingdan"></span>
+            <span>订单</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span class="iconfont iconphone"></span>
+            <span>下载APP</span>
+        </a>
+    </li>`)
+    }
 
+    var $b_zhuce = $('.b_zhuce');
+    $b_zhuce.on('click',function(){
+        localStorage.removeItem(getIt);
+        $b_rhead.html(`<li class="mlogin">
+        <span>你好，请</span>
+        <a href="enroll.html">登录</a>
+    </li>
+    <li class="mlogon">
+        <a href="login.html">注册</a>
+    </li>
+    <li>
+        <a href="vip.html">
+            <span class="iconfont iconhuiyuan"></span>
+            <span>会员俱乐部</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span class="iconfont icondingdan"></span>
+            <span>订单</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span class="iconfont iconphone"></span>
+            <span>下载APP</span>
+        </a>
+    </li>`)
+    })

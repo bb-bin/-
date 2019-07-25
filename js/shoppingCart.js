@@ -6,10 +6,21 @@ $(function(){
     var $b_goodsList = $('.b_goodsList');
     var $b_empty = $('.b_empty');
     var $b_paybox = $('.b_paybox');
-    var getIt = localStorage.key(0)
+    var getIt = localStorage.key(0);
+    var $b_rhead = $('.b_rhead')
+
+    if(getIt){
+        $b_rhead.html(`<p>你好,<a href="enroll.html" class="b_login">${getIt}</a></p><a href="#" class="b_zhuce">退出登录</a><a href="vip.html"><i class="iconfont iconhuiyuan"></i><span>会员俱乐部</span></a><a href="#"><i class="iconfont icondingdan"></i><span>我的订单</span></a><a href="#"><i class="iconfont iconphone"></i><span>下载APP</span></a>`)
+    }
+
+    var $b_zhuce = $('.b_zhuce');
+    $b_zhuce.on('click',function(){
+        localStorage.removeItem(getIt);
+        $b_rhead.html(`<p>你好,请
+        <a href="enroll.html" class="b_login">登录</a></p><a href="login.html" class="b_zhuce">注册</a><a href="vip.html"><i class="iconfont iconhuiyuan"></i><span>会员俱乐部</span></a><a href="#"><i class="iconfont icondingdan"></i><span>我的订单</span></a><a href="#"><i class="iconfont iconphone"></i><span>下载APP</span></a>`)
+    })
     
-    
-    if(localStorage.getItem(getIt) && localStorage.getItem('goods') && JSON.parse(localStorage.getItem('goods')).code != ''){
+    if(localStorage.getItem(getIt) && JSON.parse(localStorage.getItem(getIt)) != '1' && JSON.parse(localStorage.getItem(getIt)).code != ''){
         $b_cartCheck.css('display','block');
         $b_goodsList.css('display','block');
         $b_paybox.css('display','block');
@@ -19,9 +30,9 @@ $(function(){
         $b_empty.eq('1').css('display','block');
     }
 
-
-    if(localStorage.getItem('goods')){
-        var codeArr = JSON.parse(localStorage.getItem('goods')).code;
+    
+    if(localStorage.getItem(getIt)){
+        var codeArr = JSON.parse(localStorage.getItem(getIt)).code;
         if(codeArr.length == 0){
             return false;
         }
@@ -73,7 +84,7 @@ $(function(){
             });
         }
         var jsonStr = JSON.stringify({'code':codeArr});
-        localStorage.setItem('goods',jsonStr);
+        localStorage.setItem(getIt,jsonStr);
         alert('商品成功移除');
         
         if(codeArr.length == 0){
@@ -103,7 +114,7 @@ $(function(){
 
 
     $b_goodsList.on('click','.b_jian',function(){
-        var codeArr = JSON.parse(localStorage.getItem('goods')).code;
+        var codeArr = JSON.parse(localStorage.getItem(getIt)).code;
         var $_this = $(this);
         var $b_jisuan = $_this.parent().find('.b_jisuan');
         var count = $b_jisuan.val();
@@ -115,7 +126,7 @@ $(function(){
         var code = $(this).parent().parent().attr("code");
         
 
-        var codeArr = JSON.parse(localStorage.getItem('goods')).code;
+        var codeArr = JSON.parse(localStorage.getItem(getIt)).code;
         if(codeArr.length == 0){
             return false;
         }
@@ -142,9 +153,9 @@ $(function(){
         
         var jsonStr = JSON.stringify({"code":codeArr});
         
-        localStorage.setItem('goods',jsonStr);
+        localStorage.setItem(getIt,jsonStr);
 
-        var codeArr = JSON.parse(localStorage.getItem('goods')).code;
+        var codeArr = JSON.parse(localStorage.getItem(getIt)).code;
         if(codeArr.length == 0){
             return false;
         }
@@ -290,8 +301,8 @@ $(function(){
         var code = $(this).parent().parent().attr("code");
         
         
-        if(localStorage.getItem('goods')){
-            var codeArr = JSON.parse(localStorage.getItem('goods')).code;
+        if(localStorage.getItem(getIt)){
+            var codeArr = JSON.parse(localStorage.getItem(getIt)).code;
         }else{
             var codeArr = [];
         }
@@ -300,11 +311,11 @@ $(function(){
         // console.log(code);
 
         var jsonStr = JSON.stringify({"code":codeArr});
-        localStorage.setItem('goods',jsonStr);
+        localStorage.setItem(getIt,jsonStr);
 
 
 
-        var codeArr = JSON.parse(localStorage.getItem('goods')).code;
+        var codeArr = JSON.parse(localStorage.getItem(getIt)).code;
         if(codeArr.length == 0){
             return false;
         }
@@ -371,7 +382,7 @@ $(function(){
                 }
 
                 var jsonStr = JSON.stringify({'code':codeArr});
-                localStorage.setItem('goods',jsonStr);
+                localStorage.setItem(getIt,jsonStr);
                 
                 // var $b_goodsList = $('.b_goodsList');
                 // $b_goodsList.find('.b_goods').remove();
