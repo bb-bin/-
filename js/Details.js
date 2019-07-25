@@ -104,13 +104,14 @@ $(function(){
     });
 
     var $b_join = $('.b_join');
+    var getIt = localStorage.key(0)
 
     $b_join.on('click',function(){
         var code = $(this).attr("code");
         var $b_CalculateVal = $b_Calculate.attr('value');
         
-        if(localStorage.getItem('goods')){
-            var codeArr = JSON.parse(localStorage.getItem('goods')).code;
+        if(localStorage.getItem(getIt)){
+            var codeArr = JSON.parse(localStorage.getItem(getIt)).code;
         }else{
             var codeArr = [];
         }
@@ -120,7 +121,7 @@ $(function(){
         // console.log(code);
 
         var jsonStr = JSON.stringify({"code":codeArr});
-        localStorage.setItem('goods',jsonStr);
+        localStorage.setItem(getIt,jsonStr);
         alert('加入购物车成功');
 
     })

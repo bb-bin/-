@@ -1,20 +1,19 @@
 $(function(){
 
-    localStorage.setItem('uName','小明')
 
 
     var $b_cartCheck = $('.b_cartCheck');
     var $b_goodsList = $('.b_goodsList');
     var $b_empty = $('.b_empty');
     var $b_paybox = $('.b_paybox');
+    var getIt = localStorage.key(0)
     
     
-    
-    if(localStorage.getItem('uName') && localStorage.getItem('goods') && JSON.parse(localStorage.getItem('goods')).code != ''){
+    if(localStorage.getItem(getIt) && localStorage.getItem('goods') && JSON.parse(localStorage.getItem('goods')).code != ''){
         $b_cartCheck.css('display','block');
         $b_goodsList.css('display','block');
         $b_paybox.css('display','block');
-    }else if(localStorage.getItem('uName')){
+    }else if(localStorage.getItem(getIt)){
         $b_empty.eq('0').css('display','block');
     }else{
         $b_empty.eq('1').css('display','block');

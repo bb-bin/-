@@ -29,17 +29,10 @@ gulp.task('minifyHtml', function() {
 })
 
 //压缩图片
-<<<<<<< HEAD
-gulp.task('imagemin',function(){
-    gulp.src('./img/*.*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('./dist/img/'))
-=======
 gulp.task('imagemin', function() {
     gulp.src('./img/*.*')
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/img/'))
->>>>>>> 346916f721c1715826ee7a09f284a2681f6442d7
 })
 
 //自动刷新
