@@ -1,0 +1,89 @@
+.num {
+    width: 100%;
+    min-height: 200px;
+    background: #ffffff;
+}
+
+.num-1 {
+    width: 1070px;
+    min-height: 127px;
+    background: #ffffff;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.num-1 ul {
+    float: left;
+    margin: 30px 10px 0 0;
+}
+
+.num-1 ul li {
+    float: left;
+}
+
+.num-1 ul li p {
+    margin: 0 0 0 10px;
+}
+
+.num-1 ul li p:nth-of-type(1) {
+    font-size: 16px;
+    margin: 10px 0 10px 10px;
+}
+
+.num-1 ul:nth-of-type(2) {
+    margin: 30px 110px 0 110px;
+}
+
+.num-1 ul:nth-of-type(3) {
+    margin: 30px 110px 0 0;
+}
+
+.num-2 {
+    width: 1070px;
+    min-height: 208px;
+    background: #ffffff;
+    margin: 0 auto;
+}
+
+.num-2 ul {
+    padding: 28px 0 0 0;
+    float: left;
+}
+
+.num-2 ul li {
+    line-height: 23px;
+}
+
+.num-2 ul:nth-of-type(1) {
+    margin: 0 89px 0 20px;
+}
+
+.num-2 ul:nth-of-type(3) {
+    margin: 0 115px 0 136px;
+}
+
+.num-2 ul:nth-of-type(5) {
+    margin: 0 59px 0 125px;
+}
+
+.num-3 {
+    min-width: 1070px;
+    min-height: 115px;
+    background: #ffffff;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.num-3 p {
+    margin: 14px 0 23px 0;
+}
+
+.num-3 ul {
+    display: inline-block;
+    text-align: center;
+}
+
+.num-3 ul li {
+    float: left;
+    margin-right: 8px;
+}
