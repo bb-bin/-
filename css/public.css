@@ -1,0 +1,35 @@
+html,body,h1,h2,h3,h4,h5,h6,div,p,span,ul,li,ol,li,a,img,strong,em,i,b,th,td,tl,dd,dl,form,fieldset,legend,input,textarea,select{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 12px;
+    font-family: "微软雅黑";
+    line-height: 22px;
+}
+a{
+    text-decoration: none;
+    color: #696969;
+}
+ul li,ol li{
+    list-style: none;
+}
+h1,h2,h3{
+    font-weight: normal;
+}
+i,em{
+    font-style: normal;
+}
+img{
+    border: none;
+    vertical-align: top;
+}
+.clearfix:after{
+    content:"";
+    overflow: hidden;
+    display: block;
+    clear: both;
+    height: 0;
+    font-size: 1px;
+    visibility: hidden;
+}

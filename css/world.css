@@ -1,0 +1,557 @@
+body{
+    width: 100%;
+    height: 100%;
+    color: #ccc;
+}
+.mnav{
+    width: 100%;
+    height: 30px;
+    border-bottom:1px solid #ccc;
+    background: #f4f4f4;
+}
+.mnav .manv-m{
+    width: 1070px;
+    height: 30px;
+    margin: 0 auto;
+    /* background: skyblue; */
+}
+.mnav .manv-m .manv-left{
+    float: left;
+    margin-left: 5px;
+}
+.mnav .manv-m .manv-left span{
+    margin-right: 5px;
+}
+.mnav .manv-m .iconshouye{
+    color: #ff4040;
+}
+.mnav .manv-m ul{
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 5px;
+}
+.mnav .manv-m ul li{
+    float: left;
+    margin-left: 10px;
+}
+.mnav .manv-m ul .mlogin a{
+    color: #ff4040;
+}
+.mnav .manv-m ul .mlogon:hover a{
+    color: #ff4040;
+}
+/* 导航条结束 */
+.mtit{
+    width: 100%;
+    height: 180px;
+    border-bottom: 2px solid #ff4040;
+}
+.mtit .mtit-m{
+    width: 1070px;
+    height: 180px;
+    margin: 0 auto;
+    /* background: pink; */
+}
+.mtit .mtit-m .mtit-top{
+    height: 140px;
+}
+.mtit .mtit-m .mtit-logo{
+    float: left;
+}
+.mtit .mtit-m .mtit-logo .mtit-logo1 img{
+    width: 140px;
+    height: 140px;
+}
+.mtit .mtit-m .mtit-logo .mtit-logo2 img{
+    width: 160px;
+    height: 90px;
+    margin-top: 30px;
+}
+.mtit-m .mtit-right{
+    height: 67px;
+    width: 650px;
+    float: left;
+    /* background: green; */
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.mtit-m .mtit-right .ipt{
+    float: left;
+    height: 36px;
+    width: 438px;
+    outline: none;
+    border: none;   
+    padding-left: 15px;
+    color: #ccc;
+    border-top-left-radius:100px;
+    border-bottom-left-radius: 100px;
+}
+.mtit-m .mtit-right .mtit-btn{
+    float: left;
+    height: 36px;
+    width: 68px;
+    line-height: 36px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    background: #ff4040;
+    border-top-right-radius:100px;
+    border-bottom-right-radius: 100px;
+}
+.mtit-m .mtit-right a .icongouwuche{
+    height: 36px;
+    width: 100px;
+    float: left;
+    margin-top:15px;
+    line-height: 36px;
+    margin-left: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+    color: #333;
+}
+/* 购物车 */
+.mtit-m .mtit-right .mtit-form{
+    float: left;
+    border: 1px solid #ff4040;
+    border-radius:100px;
+    margin-top: 15px;
+}
+.mtit-right .mtit-ul{
+    margin-left: 32px;
+    height: 19px;
+    width: 618px;
+    margin-top: 8px;
+}
+.mtit-right .mtit-ul li{
+    float: left;
+    margin-right: 10px;
+    margin-top: 8px;
+    font-size: 14px;
+}
+/* LOGO 额放大镜写完 */
+.mtit-m .mtit-b .mtit-type{
+    float: left;
+    width: 140px;
+    height: 40px;
+    background: #ff4040;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+}
+.mtit-m .mtit-b .mtit-type a{
+    color: #fff;
+}
+.mtit-m .mtit-b ul li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.mtit-m .mtit-b ul li a:hover{
+    color: #ff4040;
+}
+/* tit处以及分类，购物车搜索写完 */
+.mbox{
+    width: 100%;
+    height: 37px;
+}
+.mbox .mbox-m{
+    height: 37px;
+    width: 1070px;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+.mbox .mbox-m h4{
+    float: left;
+    font-size: 16px;
+    margin-left: 15px;
+    color: #ff4040;
+}
+.mbox .mbox-m span{
+    float: right;
+}
+/* 面包屑写完 */
+.mmain{
+    width: 100%;
+    height: 205px;
+}
+.mmain .mmain-m{
+    width: 1070px;
+    height: 205px;
+    margin: 0 auto;
+    /* background: skyblue; */
+    border: 2px solid #ccc;
+}
+.mmain .mmain-m .mmain-top{
+    /* background: red; */
+    height: 132px;
+    border-bottom: 1px solid #ccc;
+}
+.mmain .mmain-m .mmain-top p{
+    float: left;
+    height: 122px;
+    width: 119px;
+    background: #ddd;
+    color: #333;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.mmain .mmain-m .mmain-top .mmain-c{
+    float: left;
+    margin-top: 10px;
+}
+.mmain .mmain-m .mmain-top ul{
+    width: 800px;
+    height: 54px;
+    margin-left: 15px;
+}
+.mmain .mmain-m .mmain-top ul li{
+    height: 52px;
+    width: 103px;
+    border: 1px solid #ccc;
+    float: left;
+    text-align: center;
+    line-height: 52px;
+}
+.mmain .mmain-m .mmain-top ul li a img{
+    height: 35px;
+    width: 88px;
+    margin-top: 10px;
+}
+.mmain .mmain-m .mmain-top .mmain-c ul li a:hover{
+    color: #ff4040;
+}
+.mmain .mmain-m .mmain-top ul li a img:hover{
+    border: #ff4040;
+}
+.mmain .mmain-sle{
+    height: 20px;
+    width: 100px;
+    float: left;
+    margin-top: 12px;
+}
+.mmain .mmain-sle span{
+    height: 20px;
+    width: 40px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 20px;
+    color: #ccc;
+    margin-right: 10px;
+    background: #f2f2f2;
+}   
+.mmain .mmain-sle span:hover{
+    color: #ff4040;
+}
+.mmain .mmain-sle em{
+    color: #ccc;
+}
+.mmain .mmain-sle em:hover{
+    color: #ff4040;
+}
+/* 品牌写完 */
+.mmain .mmain-m .mmain-mid{
+    /* background: red; */
+    height: 35px;
+    border-bottom: 1px solid #ccc;
+}
+.mmain .mmain-m .mmain-mid p{
+    float: left;
+    height: 35px;
+    width: 119px;
+    background: #ddd;
+    color: #333;
+    padding-left: 10px;
+    line-height: 35px;
+}
+.mmain .mmain-m .mmain-mid ul{
+    width: 768px;
+    height: 35px;
+    float: left;
+    margin-left: 10px;
+}
+.mmain .mmain-m .mmain-mid ul li{
+    height: 35px;
+    float: left;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 40px;
+}
+.mmain .mmain-m .mmain-mid .mmain-r{
+    float: right;
+    margin-right: 85px;
+    width: 40px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    background:#f2f2f2;
+}
+.mmain .mmain-m .mmain-mid .mmain-r a{
+    color: #ddd;
+}
+.mmain .mmain-m .mmain-mid .mmain-r a:hover{
+    color: #ff4040;
+}
+/* 国家写完,和蛋糕分类共用样式*/
+
+
+
+
+
+.mcon{
+    width: 100%;
+    height: 83px;
+}
+.mcon .mcon-m .mcon-left{
+    float: left;
+}
+.mcon .mcon-m{
+    width: 1070px;
+    height: 40px;
+    background: #ccc;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid #aaa;
+}
+.mcon .mcon-m ul {
+    width: 300px;
+    height: 40px;
+}
+.mcon .mcon-m ul li{
+    float: left;
+    line-height: 40px;
+    width: 58px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.mcon .mcon-m ul li:nth-child(1){
+    background: #fff;
+}
+.mcon .mcon-m ul li:hover{
+    background: #fff;
+}
+.mcon .mcon-m ul li a:hover{
+    color: #ff4040;
+}
+.mcon .mcon-m .mcon-mid{
+    float: left;
+    width: 118px;
+    height: 40px;
+    line-height: 40px;
+    border-right: 1px solid #aaa;
+}
+.mcon-m .mcon-mid input{
+    width: 41px;
+    height: 19px;
+    border: 1px solid #aaa;
+    background: #fff;
+    color: #999;
+    line-height: 19px;
+}
+.mcon-m .mcon-mid em{
+    color: #666;
+}
+.mcon-m .mcon-right{
+    width: 146px;
+    height: 40px;
+    /* background: yellow; */
+    float: left;
+    position: relative;
+    color: #333;
+    border-right: 1px solid #aaa;
+}
+.mcon-m .mcon-right span{
+    float: left;
+    display: inline-block;
+    height: 40px;
+    width: 48px;
+    line-height: 40px;
+    text-align: center;
+}
+.mcon-m .mcon-right em{
+    float: left;
+    display: inline-block;
+    height: 40px;
+    width: 97px;
+    line-height: 40px;
+    text-align: center;
+}
+.mcon-m .mcon-right i{
+    background: url(../img/sub.png) no-repeat;
+    position: absolute;
+    right: -6px;
+    bottom: -6px;
+    height: 12px;
+    width: 12px;
+}
+.mcon-m .mcon-search{
+    float: right;
+    width: 160px;
+    height: 40px;
+    position: relative;
+}
+.mcon-m .mcon-search input{
+    height: 30px;
+    width: 160px;
+    margin-top: 5px;
+    color: #aaa;
+    border: none;
+}
+.mcon-m .mcon-search i{
+    position: absolute;
+    right: 9px;
+    top: 10px;
+    cursor: pointer;
+}
+/* 综合销量写完 */
+.mcon .mcon-jd{
+    width: 1070px;
+    height: 40px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-top: none;
+    line-height: 40px;
+    color: #000;
+}
+.mcon .mcon-jd input{
+    margin-left: 10px;
+}
+.mpic{
+    width: 100%;
+    min-height: 400px;
+    overflow: hidden;
+}
+.mpic .mpic-m{
+    width: 1070px;
+    min-height: 400px;
+    margin: 0 auto;
+    /* background: skyblue; */
+}
+
+.mpic .mpic-m .mpic-mul{
+    height: 384px;
+    width: 184px;
+    margin-left: 14px;
+    float: left;
+    /* background: rgb(164, 209, 164); */
+}
+.mpic .mpic-m .mpic-mul li a img{
+    width: 184px;
+    height: 184px;
+}
+.mpic .mpic-m .mpic-mul .mpic-sp{
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    font-size: 16px;
+    color: #ff4040;
+}
+
+.mpic .mpic-m .mpic-mul .mpic-txt{
+    width: 174px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
+}
+.mpic .mpic-m .mpic-mul li .mpic-add{
+    width: 184px;
+    height: 37px;
+    /* background: red; */
+}
+.mpic .mpic-m .mpic-mul li .mpic-add span{
+    float: left;
+    display: inline-block;
+    width: 16px;
+    height: 28px;
+    position: relative;
+    margin-bottom: 3px;
+    margin-right: 15px;
+}
+.mpic .mpic-m .mpic-mul li .mpic-add span .iconweibiaoti35{
+    position: absolute;
+    left: 0px;
+    top: 15px;
+    height: 15px;
+    width: 15px;
+}
+.mpic .mpic-m .mpic-mul li .mpic-add span .iconshang:hover{
+    color: #ff4040;
+}
+.mpic .mpic-m .mpic-mul li .mpic-add span .iconweibiaoti35:hover{
+    color: #ff4040;
+}
+.mpic .mpic-m .mpic-mul li .mpic-add input{
+    width: 30px;
+    height: 28px;
+    float: left;
+    text-align: center;
+    float: left;
+    margin-right: 5px;
+}
+.mpic .mpic-m .mpic-mul li .mpic-add a h4{
+    float: left;
+    width: 92px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 4px;
+    text-align: center;
+    color: #f2f2f2;
+    background: #ff4040;
+} 
+/* 加入购物车 */
+.mpic .mpic-m .mpic-mul .mpic-dian{
+    height: 18px;
+    width: 184px;
+}
+.mpic .mpic-m .mpic-mul li .mpic-l{
+    float: left;
+    width: 60px;
+    height: 18px;
+}
+.mpic .mpic-m .mpic-mul li .mpic-d{
+    float: left;
+    width: 90px;
+    height: 18px;
+    color: #ff4040;
+}
+.mpic .mpic-m .mpic-mul .mpic-my{
+    height: 16px;
+    width: 184px;
+    margin-top: 5px;
+}
+.mpic .mpic-m .mpic-mul .mpic-my p em{
+    float: left;
+    height: 16px;
+    width: 30px;
+    display: inline-block;   
+    border: 1px solid #ff4040;   
+    text-align: center;
+    line-height: 16px;
+    color: #ff4040;
+    margin-right: 3px;
+}
+.mpic .mpic-m .mpic-mul .mpic-my p a{
+    float: left;
+    height: 16px;
+    width: 134px;
+}
+.mpic .mpic-m .mpic-mul .mpic-my p a span:nth-child(1){
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 16px;
+    width: 96px;
+}
+
+
+

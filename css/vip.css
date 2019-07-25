@@ -1,0 +1,350 @@
+body{
+    width: 100%;
+    height: 100%;
+    color: #ccc;
+}
+.mnav{
+    width: 100%;
+    height: 30px;
+    border-bottom:1px solid #ccc;
+    background: #f4f4f4;
+}
+.mnav .manv-m{
+    width: 1228px;
+    height: 30px;
+    margin: 0 auto;
+    /* background: skyblue; */
+}
+.mnav .manv-m .manv-left{
+    overflow: hidden;
+    float: left;
+    margin-left: 5px;
+}
+.mnav .manv-m .manv-left a{
+    margin-right: 5px;
+}
+.mnav .manv-m .manv-left a:hover{
+    color: #ff4040;
+}
+.mnav .manv-m .manv-left .mnav-d .icondingwei{
+    line-height: 30px;
+    color: #ff4040;
+}
+.mnav .manv-m .manv-left span{
+    margin-right: 5px;
+    display: inline-block;
+}
+.mnav .manv-m .iconshouye{
+    color: #ff4040;
+}
+.mnav .manv-m ul{
+    overflow: hidden;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 5px;
+}
+.mnav .manv-m ul li{
+    overflow: hidden;
+    float: left;
+    margin-left: 10px;
+}
+.mnav .manv-m ul .mlogin a{
+    color: #ff4040;
+}
+.mnav .manv-m ul .mlogon:hover a{
+    color: #ff4040;
+}
+
+
+
+/* 导航条结束 */
+
+.vtit{
+    width: 100%;
+    height: 70px;
+}
+.vtit .vtit-v{
+    width: 1228px;
+    height: 70px;
+    margin: 0 auto;
+    /* background: pink; */
+}
+.vtit .vtit-v .vtit-logo a img{
+    width: 214px;
+    height: 32px;
+}
+.vtit .vtit-v .vtit-logo{
+    float: left;
+    margin-top: 32px;
+    margin-left: 10px;
+}
+.vtit .vtit-v .vtit-ul{
+    width: 800px;
+    height: 36px;
+    margin-left: 100px;
+    padding-top: 34px;
+    float: left;
+}
+.vtit .vtit-v .vtit-ul li{
+    float: left;
+    padding: 0 10x;
+    margin-right: 50px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+}
+.vtit .vtit-v .vtit-ul li a:hover{
+    color: #ff4040;
+}
+/* tit写完 */
+
+.vmain{
+    width: 100%;
+    height: 580px;
+    background: #e8d9ee;
+}
+/* 此处应该加个canvas背景图 */
+.vmain .vmain-v{
+    width: 1228px;
+    height: 580px;
+    margin: 0 auto;
+    /* background: pink; */
+}
+.vmain .vmain-v .vmain-all{
+    width: 1228px;
+    height: 522px;
+    /* background: skyblue; */
+}
+.vmain .vmain-v .vmain-left{
+    float: left;
+    width: 212px;
+    height: 472px;
+    background: #fff;    
+    float: left;  
+    margin-top: 50px; 
+    opacity: 0.5;
+    padding: 0 20px;
+}
+.vmain .vmain-v .vmain-left h3{
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.vmain .vmain-v .vmain-left a img{
+    height: 76px;
+    width: 76px;
+    border-radius: 50%;
+    margin-left: 60px;
+}
+.vmain .vmain-v .vmain-left p{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.vmain .vmain-v .vmain-left .vmain-money{
+    width: 212px;
+    height: 100px;
+    padding-top: 22px;
+    text-align: center;
+    font-size: 14px;
+}
+.vmain .vmain-v .vmain-left .vmain-money h4{
+    margin-top: 5px;
+}
+.vmain .vmain-v .vmain-left .vmain-money h2{
+    margin-top: 20px;
+}
+.vmain .vmain-v .vmain-left .vmain-money .vmain-m1{
+    float: left;
+    margin-left: 40px;
+}
+.vmain .vmain-v .vmain-left .vmain-money .vmain-m2{
+    float: left;
+    margin-left: 40px;
+}
+.vmain .vmain-v .vmain-left .vmain-money .vmain-m1:hover{
+    color: #ff4040;
+}
+.vmain .vmain-v .vmain-left .vmain-money .vmain-m2:hover{
+    color: #ff4040;
+}
+.vmain .vmain-v .vmain-left .vmain-hb{
+    height: 40px;
+    width: 212px;
+}
+.vmain .vmain-v .vmain-left .vmain-hb .vmain-app{
+    width: 143px;
+    height: 19px;
+    background: #ff4040;
+    text-align: center;
+    border-radius: 25px;
+    margin-left: 30px;
+    padding: 10px;
+    line-height: 19px;
+    font-size: 12px;
+}
+.vmain .vmain-v .vmain-left .vmain-hb a{
+    color: #fff;
+}
+.vmain .vmain-v .vmain-left .vmain-con{
+    font-size: 12px;
+}
+.vmain .vmain-v .vmain-all .vmain-right{
+    width: 940px;
+    height: 472px;
+    /* background: skyblue; */
+    float: right;
+    margin-top: 50px;
+}
+.vmain .vmain-v .vmain-all .vmain-right ul{
+    width: 930px;
+    height: 282px;
+}
+.vmain .vmain-v .vmain-all .vmain-right ul li{
+    float: left;
+    margin-left: 10px;
+}
+.vmain .vmain-v .vmain-all .vmain-right ul .vmain-1 img{
+    height: 194px;
+    width: 194px;
+    margin-top: 22px;
+}
+.vmain .vmain-v .vmain-all .vmain-right ul .vmain-2 img{
+    height: 130px;
+    width: 130px;
+    margin-top: 73px;
+}
+.vmain .vmain-v .vmain-all .vmain-right ul .vmain-3 img{
+    height: 125px;
+    width: 125px;
+    margin-top: 75px;
+}
+.vmain .vmain-v .vmain-all .vmain-right ul .vmain-4 img{
+    height: 120px;
+    width: 120px;
+    margin-top: 80px;
+}
+.vmain .vmain-v .vmain-all .vmain-right ul .vmain-5 img{
+    height: 115px;
+    width: 115px;
+    margin-top: 82px;
+}
+.vmain .vmain-v .vmain-all .vmain-right  .vmain-6 img{
+    height: 110px;
+    width: 110px;
+    margin-top: 85px;
+}
+.vmain .vmain-v .vmain-all .vmain-right .vmain-b li a span{
+    font-size: 60px;
+}
+.vmain .vmain-v .vmain-all .vmain-right .vmain-b li {
+    margin-left: 55px;
+    text-align: center;
+}
+.vpic{
+    width: 100%;
+    /* height: 140px; */
+}
+.vpic .vpic-v{
+    width: 1228px;
+    /* height: 140px; */
+    margin: 0 auto;
+    /* background-color:red; */
+}
+.vpic .vpic-v ul li{
+    float: left;
+    margin-left: 20px;  
+}
+.vpic .vpic-v ul{
+    overflow: hidden;
+}
+.vpic .vpic-v ul li img{
+    width: 170px;
+    height: 154px;
+}
+.vpic .vpic-v ul .vpic-txt{
+    float: left;
+}
+.vpic .vpic-v ul .vpic-txt h2{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.vpic .vpic-v ul .vpic-txt h4{
+    margin-left: 20px;
+}
+.vbox{
+    width: 100%;
+    height: 94px;
+}
+.vbox .vbox-v{
+    width: 1228px;
+    height: 94px;
+    margin: 0 auto;
+    /* background: red; */
+    line-height: 94px;
+    text-align: center;
+}
+
+
+.vlbt .vlbt-v{
+    width: 1228px;
+    margin: 0 auto;
+    /* background: pink; */
+    height: 26px;
+    margin-bottom: 20px;
+}
+.vlbt .vlbt-v .vlbt-ul{
+    width: 450px;
+    height: 26px;
+    margin: 0 auto;
+    /* background: skyblue; */
+}
+.vlbt .vlbt-v .vlbt-ul ul{
+    height: 26px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.vlbt .vlbt-v .vlbt-ul li{
+    float: left;
+    margin-left: 22px;
+    font-size: 16px;
+}
+
+
+/* .fix{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    background: yellow;
+    right: 10px;
+    top: 500px;
+    display: none;
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
