@@ -18,6 +18,8 @@ $(function(){
         localStorage.removeItem(getIt);
         $b_rhead.html(`<p>你好,请
         <a href="enroll.html" class="b_login">登录</a></p><a href="login.html" class="b_zhuce">注册</a><a href="vip.html"><i class="iconfont iconhuiyuan"></i><span>会员俱乐部</span></a><a href="#"><i class="iconfont icondingdan"></i><span>我的订单</span></a><a href="#"><i class="iconfont iconphone"></i><span>下载APP</span></a>`)
+
+        location.reload();
     })
     
     if(localStorage.getItem(getIt) && JSON.parse(localStorage.getItem(getIt)) != '1' && JSON.parse(localStorage.getItem(getIt)).code != ''){

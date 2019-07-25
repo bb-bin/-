@@ -271,7 +271,7 @@ $('.pao-3 ul li:nth-child(3)').mouseover(function() {
 })
 $('.pao-3 ul li:nth-child(3)').mouseout(function() {
     $(this).css('background', '')
-<<<<<<< HEAD
+
 });
 var getIt = localStorage.key(0);
 var $b_rhead = $('.b_rhead')
@@ -290,6 +290,3 @@ var $b_rhead = $('.b_rhead')
         <li><a href="#"><em class="iconfont iconhuiyuan"></em> 会员俱乐部</a></li>
         <li><a href="#"><em class="iconfont icondingdan"></em> 我的订单</a></li>`);
     })
-=======
-});
->>>>>>> 4b61c7a64ebb4e89fc380a7ca90f81e7de1fff42
