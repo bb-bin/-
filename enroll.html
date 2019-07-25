@@ -151,7 +151,7 @@
 						var json = JSON.parse(str);
 						if(json.err == '0'){
 							alert(json.msg);
-							localStorage.setItem(uname.value,'');
+							localStorage.setItem(uname.value,' ');
 							window.open('index.html');
 						}else{
 							alert(json.msg);

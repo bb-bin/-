@@ -1,7 +1,6 @@
 $(function(){
 
 
-
     var $b_cartCheck = $('.b_cartCheck');
     var $b_goodsList = $('.b_goodsList');
     var $b_empty = $('.b_empty');
