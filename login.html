@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>1号店注册</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div class="l_loginwrap clearfix">
+			<div class="l_wrap">
+				<!-- logo -->
+				<a class="l_logo" href="#"><img src="img/loginlogo.jpg" alt="1号店"></a>
+				<!-- 右边模块 -->
+				<div class="l_right">
+					<span>您好，欢迎光临1号店！<a href="enroll.html"> 请登录</a></span>
+					<div class="l_help">
+						<a class="icon_a" href="#"><s class="icon_s"></s>帮助中心</a>
+						<!-- 隐藏列表 -->
+						<div class="l_menu_list">
+							<ul>
+								<li><a href="#">包裹跟踪</a></li>
+								<li><a href="#">常见问题</a></li>
+								<li><a href="#">在线退换货</a></li>
+								<li><a href="#">在线投诉</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 主体内容 -->
+		<div class="l_main_wrap clearfix">
+			<div class="l_main">
+					
+				<!-- 表单 -->
+				<!-- <form id="form" action="#" name="reg"> -->
+					<div class="l_form">
+						<h2>1号店注册</h2>
+						<div class="l_dw">
+							<input type="text" name="user" id="uname" value="" />
+							<span class="l_span1">用户名</span>
+							<i class="info info_user">4-20位字符，可由中文、英文、数字或符号“_”组成</i>
+							<i class="error error_user1">请输入正确的用户名,用户名不能全为数字</i>
+							<i class="error error_user">请输入正确的用户名,用户名应为4-20位字符</i>
+							<i class="succ succ_user">可用</i>
+						</div>
+						<div class="l_dw">
+							<input type="phone" name="phone" id="phone" value="" />
+							<span class="l_span2">手机号</span>
+							<i class="info info_phone">请填写正确的手机号码，以便接收订单通知，找回密码等</i>
+							<i class="error error_phone">格式错误，请输入正确的手机号码</i>
+							<i class="succ succ_phone">可用</i>
+						</div>
+						<div class="l_dw clearfix">
+							<input type="text" name="code" id="l_ipt" value="" />
+							<span class="l_code l_span3">验证码</span>
+							<p class="l_change"></p>
+							<i class="info info_code">请输入验证码</i>
+							<i class="error error_code">验证码不一致，请核对后重新输入</i>
+							<i class="succ succ_code">可用</i>
+						</div>
+						<div class="l_dw">
+							<input type="password" name="pass" id="pwd" value="" />
+							<span class="l_span4">设置密码</span>
+							<i id="info_pass" class="info info_pass">
+								<p>安全级别：<strong id="s1" class="s s1">■</strong> <strong id="s2" class="s s2">■</strong> <strong id="s3" class="s s3">■</strong> <strong id="s4" class="s s4" style="font-weight: normal;"></strong></p>
+								<p><strong id="q1" style="font-weight: normal;">○</strong> 6-20个字符</p>
+								<p><strong id="q2" style="font-weight: normal;">○</strong> 只能包含大小写字母、数字和非空格字符</p>
+								<p><strong id="q3" style="font-weight: normal;">○</strong> 大、小写字母、数字、非空字符，2种以上</p>
+							</i>
+							<i class="error error_pass">格式错误，请输入正确的手机号码</i>
+							<i class="succ succ_pass">可用</i>
+						</div>
+						<div class="l_dw">
+							<input type="password" name="notpass" id="pwdSure" value="" />
+							<span class="l_span5">确认密码</span>
+							<i class="info info_notpass">请再次输入密码</i>
+							<i class="error error_notpass">两次密码输入不一致</i>
+							<i class="succ succ_notpass">可用</i>
+						</div>
+						<p class="l_logon_txt">点击注册，表示您同意1号店<a href="#">《服务协议及隐私声明》</a></p>
+						<!-- <a class="l_agree" href="#">同意协议并注册</a> -->
+						<!-- <input type="submit" name="sub" id="sub" class="l_agree" value="同意协议并注册" /> -->
+						<button type="button"  class="l_agree">同意协议并注册</button>
+					</div>
+				<!-- </form> -->
+			</div>
+		</div>
+		
+		<!-- 底部 -->
+		<div class="l_footer_wrap">
+			<div class="l_footer">
+				<p class="l_footer_p1">沪ICP备16050468号 | 沪B2-20170039 | 营业执照</p>
+				<p class="l_footer_p2">Copyright © 1号店网上超市 2007-2018，All Rights Reserved</p>
+			</div>
+		</div>
+		
+		<!-- js引入 -->
+		<script src="js/login.js"></script>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script>
+			// 获取注册按钮
+			var $btn_1 = $('.l_agree');
+			
+			// 获取光标时 规则提示信息显示
+			$('#uname').on('focus',function(){
+				$('.l_span1').animate({left:390},200,'swing');//span向左移动
+				$('.info_user').css('display','block');//规则提示信息显示
+				$('.succ_user').css('display','none');//成功提示信息隐藏
+				$('.error_user').css('display','none');//错误提示信息隐藏
+			});
+			$('#phone').on('focus',function(){
+				$('.l_span2').animate({left:390},200,'swing');
+				$('.info_phone').css('display','block');
+				$('.succ_phone').css('display','none');
+				$('.error_phone').css('display','none');
+			});
+			$('#l_ipt').on('focus',function(){
+				$('.l_span3').animate({left:390},200,'swing');
+				$('.info_code').css('display','block');
+				$('.succ_code').css('display','none');
+				$('.error_code').css('display','none');
+			});
+			$('#pwd').on('focus',function(){
+				$('.l_span4').animate({left:390},200,'swing');
+				$('.info_pass').css('display','block');
+				$('.succ_pass').css('display','none');
+				$('.error_pass').css('display','none');
+			});
+			$('#pwdSure').on('focus',function(){
+				$('.l_span5').animate({left:390},200,'swing');
+				$('.info_notpass').css('display','block');
+				$('.succ_notpass').css('display','none');
+				$('.error_notpass').css('display','none');
+			});
+			
+			var unameFlag = false;
+			var phoneFlag = false;
+			var codeFlag = false;
+			var pwdFlag = false;
+			var pwdSureFlag = false;
+			// 失去光标时
+			// 用户名验证
+			$("#uname").blur(function(){
+			    var uNameReg = /^\w{4,20}$/;//正则验证
+			    if(!uNameReg.test(this.value)){//对用户名进行正则验证
+			        $('.info_user').css('display','none');//规则提示信息隐藏
+			        $('.succ_user').css('display','none');//成功提示信息隐藏
+			        $('.error_user').css('display','block');//可用提示信息显示
+					unameFlag = false;
+			        return false;
+			    }else{
+					$('.info_user').css('display','none');//规则提示信息隐藏
+					$('.succ_user').css('display','block');//成功提示信息显示
+					$('.error_user').css('display','none');//可用提示信息隐藏
+					unameFlag = true;
+					return true;
+				}
+			})
+			
+			// 手机号验证
+			$("#phone").blur(function(){
+			    var phoneReg = /^1[3-9]\d{9}$/;
+			    if(!phoneReg.test(this.value)){
+			        $('.info_phone').css('display','none');
+			        $('.succ_phone').css('display','none');
+			        $('.error_phone').css('display','block');
+					phoneFlag = false;
+			        return false;
+			    }else{
+					$('.info_phone').css('display','none');
+					$('.succ_phone').css('display','block');
+					$('.error_phone').css('display','none');
+					phoneFlag = true;
+					return true;
+				}
+			})
+			
+			// 验证码
+			$("#l_ipt").keyup(function(){
+			    if($("#l_ipt").val() == $(".l_change").html()){
+			        $('.info_code').css('display','none');
+			        $('.succ_code').css('display','block');
+			        $('.error_code').css('display','none');
+					codeFlag = true;
+			        return true;
+			    }else{
+					$('.info_code').css('display','none');
+					$('.succ_code').css('display','none');
+					$('.error_code').css('display','block');
+					codeFlag = false;
+					return false;
+				}
+			})
+			
+			// 密码验证
+			$("#pwd").blur(function(){
+			    var pwdReg = /^[a-zA-Z0-9]{6,20}$/;
+				if(!pwdReg.test(this.value)){
+			        $('.error_pass').css('display','block');
+					$('.info_pass').css('display','none');
+					$('.succ_pass').css('display','none');
+					pwdFlag = false;
+			        return false;
+			    }else{
+					$('.error_pass').css('display','none');
+					$('.info_pass').css('display','none');
+					$('.succ_pass').css('display','block');
+					pwdFlag = true;
+					return true;
+				}
+			})
+			
+			// 确认密码
+			$("#pwdSure").keyup(function(){
+				if($("#pwdSure").val() != $("#pwd").val()){
+					$('.info_notpass').css('display','none');
+					$('.succ_notpass').css('display','none');
+					$('.error_notpass').css('display','block');
+					pwdSureFlag = false;
+					return false;
+				}else{
+					$('.info_notpass').css('display','none');
+					$('.succ_notpass').css('display','block');
+					$('.error_notpass').css('display','none');
+					pwdSureFlag = true;
+					return true;
+				}
+			})
+			
+			// 点击注册按钮时
+			$btn_1.on('click',function(){
+				var user = $('#uname').val();
+				var phone = $('#phone').val();
+				var code = $('#l_ipt').val();
+				var pass = $('#pwd').val();
+				var pSure = $('#pwdSure').val();
+				
+				// 判断用户名密码格式是否正确,否则return false
+				if(unameFlag == false){
+					alert('用户名格式错误');
+					return false;
+				}
+				if(phoneFlag == false){
+					alert('手机号格式错误');
+					return false;
+				}
+				if(codeFlag == false){
+					alert('验证码输入错误');
+					return false;
+				}
+				if(pwdFlag == false){
+					alert('密码格式错误');
+					return false;
+				}
+				if(pwdSureFlag == false){
+					alert('密码输入不一致，请确认密码');
+					return false;
+				}
+				
+				// 请求数据
+				$.ajax({
+					type: 'get',
+					url: './login.php',
+					cache: 'false',
+					data: {user: user, pass:pass,act:'add'},
+					dataType: 'json',
+					success: function(json){
+						console.log(json);
+						if(json.msg == '注册成功'){
+							alert(json.msg);
+							location.href = 'enroll.html';
+							// $(location).attr("href","login.html");
+						}else{
+							alert(json.msg);
+							return;
+						}
+					},errot: function(err){
+						alert(err);
+					}
+				})
+			});
+			
+			
+		</script>
+	</body>
+</html>

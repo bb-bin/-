@@ -1,0 +1,195 @@
+/* 网页开始 */
+/* 头部 */
+.l_loginwrap{
+	background: #fff;
+	padding: 12px;
+	border: 1px solid #e1e1e1;
+	/* overflow: hidden; */
+}
+.l_wrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/* logo */
+.l_wrap .l_logo{
+	float: left;
+}
+/* 右边模块 */
+.l_right{
+	float: right;
+	line-height: 12px;
+	margin-top: 7px;
+}
+.l_right span{
+	float: left;
+	color: #999999;
+}
+.l_right span a{
+	color: #0a6cce;
+}
+.l_right .l_help{
+	float: right;
+	margin-left: 25px;
+	position: relative;
+	padding: 0 6px;
+}
+.l_right .l_help .icon_a{
+	display: inline-block;
+	padding-right: 18px;
+	background: url(../img/regist.png) no-repeat;
+	color: #333333;
+}
+.l_right .l_help .icon_a{
+	background-position: right -30px;
+}
+.l_right .l_help s{
+	display: inline-block;
+	height: 18px;
+	width: 16px;
+	margin-right: 6px;
+	background: url(../img/regist.png) no-repeat;
+	vertical-align: middle;
+}
+.l_right .l_help .icon_s{
+	background-position: -344px 0px;
+}
+
+/* 隐藏列表 */
+.l_right .l_help .l_menu_list{
+	position: absolute;
+	/* z-index: -1; */
+	top: 0;
+	right: 0;
+	width: 98px;
+	padding-top: 21px;
+	border: 1px solid #EEEEEE;
+	display: none;
+}
+.l_right .l_help .l_menu_list a{
+	color: #333;
+	height: 24px;
+	line-height: 24px;
+	padding-left: 25px;
+	border-top: 1px dotted #e4e4e4;
+	background: #fff;
+}
+.l_right .l_help a:hover{
+	color: red;
+}
+.l_right .l_help:hover .l_menu_list{
+	display: block;
+}
+/* 主体内容 */
+.l_main_wrap{
+	background: #fcfcfc;
+	border-bottom: 1px solid #f4f4f4;
+}
+.l_main{
+	width: 1200px;
+	margin: 0 auto;
+	background: #fcfcfc;
+}
+.l_main h2{
+	width: 100%;
+	height: 71px;
+	line-height: 71px;
+	text-align: center;
+	padding-top: 19px;
+}
+/* 表单 */
+.l_main .l_form{
+	margin: 0 auto;
+}
+.l_main .l_form .l_dw{
+	position: relative;
+}
+.l_main .l_form .l_dw input{
+	width: 308px;
+	height: 50px;
+	border-radius: 3px;
+	border: 1px solid #dedede;
+	margin-bottom: 10px;
+	margin-left: 450px;
+	padding-left: 20px;
+}
+.l_main .l_form .l_dw span{
+	position: absolute;
+	top: 18px;
+	left: 470px;
+	color: #666666;
+	font-size: 14px;
+}
+.l_main .l_form .l_agree{
+	display: inline-block;
+	width: 330px;
+	height: 52px;
+	line-height: 52px;
+	background: #ff3c3c;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 45px;
+	text-align: center;
+	margin-left: 450px;
+}
+.l_main .l_form .l_logon_txt{
+	line-height: 36px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+.l_main .l_form .l_logon_txt a{
+	color: #0a6cce;
+}
+/* 验证码 */
+#l_ipt{
+	width: 172px;
+	height: 50px;
+	float: left;
+	margin-left: 450px;
+}
+.l_main .l_form .l_change{
+	display: inline-block;
+	width: 126px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	border-radius: 3px;
+	background: #ff3c3c;
+	float: left;
+	margin-left: 11px;
+	text-align: center;
+	font-size: 20px;
+	/* 鼠标变成小手 */
+	cursor:pointer;
+}
+/* 用户名验证 */
+.l_main .l_form .l_dw .info,.l_main .l_form .l_dw .error,.l_main .l_form .l_dw .succ{
+	display: none;
+	background: #eee;
+	padding: 15px;
+	position: absolute;
+	left: 800px;
+	top: 0px;
+}
+/* 错误信息 */
+.l_main .l_form .l_dw .error{
+	background: #fff7d1;
+}
+/* 可用 */
+.l_main .l_form .l_dw .succ{
+	background: #87b848;
+}
+
+/* 底部 */
+.l_footer{
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+.l_footer p{
+	line-height: 28px;
+}
+.l_footer .l_footer_p1{
+	margin-top: 16px;
+}

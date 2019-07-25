@@ -1,0 +1,287 @@
+/* 网页开始 */
+/* 头部 */
+.l_logonwrap{
+	background: #fff;
+	padding: 12px;
+	border: 1px solid #e1e1e1;
+}
+.l_wrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/* logo */
+.l_wrap .l_logo{
+	float: left;
+}
+/* 右边模块 */
+.l_right{
+	float: right;
+	line-height: 12px;
+	margin-top: 7px;
+}
+.l_right span{
+	float: left;
+	color: #999999;
+}
+.l_right span a{
+	color: #0a6cce;
+}
+.l_right .l_help{
+	float: right;
+	margin-left: 25px;
+	position: relative;
+	padding: 0 6px;
+}
+.l_right .l_help .icon_a{
+	display: inline-block;
+	padding-right: 18px;
+	background: url(../img/regist.png) no-repeat;
+	color: #333333;
+}
+.l_right .l_help .icon_a{
+	background-position: right -30px;
+}
+.l_right .l_help s{
+	display: inline-block;
+	height: 18px;
+	width: 16px;
+	margin-right: 6px;
+	background: url(../img/regist.png) no-repeat;
+	vertical-align: middle;
+}
+.l_right .l_help .icon_s{
+	background-position: -344px 0px;
+}
+
+/* 隐藏列表 */
+.l_right .l_help .l_menu_list{
+	position: absolute;
+	/* z-index: -1; */
+	top: 0;
+	right: 0;
+	width: 98px;
+	padding-top: 21px;
+	border: 1px solid #EEEEEE;
+	display: none;
+}
+.l_right .l_help .l_menu_list a{
+	color: #333;
+	height: 24px;
+	line-height: 24px;
+	padding-left: 25px;
+	border-top: 1px dotted #e4e4e4;
+	background: #fff;
+}
+.l_right .l_help a:hover{
+	color: red;
+}
+.l_right .l_help:hover .l_menu_list{
+	display: block;
+}
+
+/* 主体内容 */
+.l_main_wrap{
+	background: #fcfcfc;
+	padding-top: 26px;
+}
+.l_main{
+	background: #fcfcfc;
+	width: 980px;
+	margin: 0 auto;
+}
+.l_main .l_img1{
+	float: left;
+	margin-top: 45px;
+	height: 315px;
+	width: 510px;
+}
+/* PC端登录界面 */
+.l_main .l_main_login{
+	float: right;
+	width: 330px;
+	padding: 45px 35px 0 35px;
+	background: #fff;
+	position: relative;
+}
+.l_main .l_main_login .l_login_pc{
+	padding-bottom: 18px;
+	/* display: none; */
+}
+.l_main_login .l_login_pc .l_login_text{
+	width: 312px;
+	padding: 8px;
+	background: #fff7d1;
+	color: #999;
+	border: 1px solid #e5debc;
+	border-radius: 2px;
+	position: absolute;
+	top: 9px;
+	left: 35px;
+	display: none;
+}
+.l_main .l_main_login h3{
+	float: left;
+}
+.l_main .l_main_login .l_login_a{
+	float: right;
+	color: #0a6cce;
+}
+.l_main_form .l_form_item{
+	position: relative;
+}
+.iconhuiyuan{
+	position: absolute;
+	left: 10px;
+	top: 20px;
+	font-size: 22px;
+}
+.iconmima{
+	position: absolute;
+	left: 10px;
+	top: 20px;
+	font-size: 22px;
+}
+.l_main_form .l_form_item .user_ipt{
+	width: 288px;
+	height: 52px;
+	border: 1px solid #dedede;
+	margin: 5px 0;
+	padding-left: 40px;
+}
+.l_main_form .l_form_forget{
+	margin: 5px 0;
+}
+.l_main_form .l_form_forget .l_forget_a1{
+	float: left;
+	color: #999;
+	padding-left: 18px;
+	background: url(../img/login_1.png) no-repeat -347px -270px;
+}
+.l_main_form .l_form_forget .l_forget_a2{
+	float: right;
+	color: #999;
+}
+/* 登录 */
+.l_main_form .l_form_a{
+	display: inline-block;
+	width: 330px;
+	height: 52px;
+	line-height: 52px;
+	background: #ff3c3c;
+	border-radius: 3px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 5px 0 10px;
+}
+.iconrenren-copy{
+	color: #c60825;
+	font-size: 35px;
+	margin-right: 7px;
+}
+.iconjingdong-{
+	color: #c81825;
+	font-size: 35px;
+	margin-right: 7px;
+}
+.iconweibo{
+	color: #dd2e37;
+	font-size: 35px;
+	margin-right: 7px;
+}
+.iconzhifubao{
+	color: #10a8ff;
+	font-size: 35px;
+	margin-right: 7px;
+}
+.l_market_something .l_market_icont{
+	margin-top: 10px;
+	float: left;
+}
+.l_market_something .l_unfold{
+	float: right;
+}
+.l_market_something .l_unfold .l_unfold_a1{
+	color: #999;
+	line-height: 48px;
+}
+.iconshang{
+	display: none;
+}
+.l_login_pc ul{
+	margin-top: 15px;
+	display: none;
+}
+.l_login_pc ul li{
+	float: left;
+	width: 82px;
+	margin: 0 0 10px 0;
+}
+.iconwangwang{
+	color: #ff6711;
+	font-size: 16px;
+}
+.iconwangyi{
+	color: #c4282b;
+	font-size: 16px;
+}
+.iconbaidu{
+	color: #2932e1;
+	font-size: 16px;
+}
+/* 移动端登录界面 */
+.l_login_phone{
+	text-align: center;
+	display: none;
+}
+.l_login_phone .l_login_app{
+	font-size: 14px;
+}
+.l_login_phone .l_login_app a{
+	color: red;
+	font-size: 14px;
+}
+.l_login_phone .l_login_wx img{
+	margin: 5px 0;
+	border: 1px solid #eee;
+}
+.l_login_phone .l_login_break{
+	padding: 15px 0 90px;
+}
+.l_login_phone .l_login_break a{
+	color: #333;
+}
+.l_main_login .l_login_cut{
+	position: absolute;
+	right: 0;
+	bottom: -3px;
+}
+.l_main_login .l_login_cut a{
+	display: block;
+	width: 62px;
+	height: 62px;
+	background: url(../img/codeSwich.png) no-repeat -88px 0;
+}
+/* .l_main_login .l_login_cut a:hover{
+	background: url(../img/codeSwich.png) no-repeat -88px -88px;
+} */
+
+/* 底部 */
+.l_footer_wrap{
+	background: #fcfcfc;
+	width: 100%;
+	height: 100%;
+}
+.l_footer{
+	width: 980px;
+	margin: 0 auto;
+	text-align: center;
+}
+.l_footer p{
+	line-height: 28px;
+}
+.l_footer .l_footer_p1{
+	padding-top: 16px;
+}

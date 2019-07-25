@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>1号店登录</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/enroll.css"/>
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div class="l_logonwrap clearfix">
+			<div class="l_wrap">
+				<!-- logo -->
+				<a class="l_logo" href="#"><img src="img/loginlogo.jpg" alt="1号店"></a>
+				<!-- 右边模块 -->
+				<div class="l_right">
+					<span>您好，欢迎光临1号店！<a href="enroll.html"> 请登录</a></span>
+					<div class="l_help">
+						<a class="icon_a" href="#"><s class="icon_s"></s>帮助中心</a>
+						<!-- 隐藏列表 -->
+						<div class="l_menu_list">
+							<ul>
+								<li><a href="#">包裹跟踪</a></li>
+								<li><a href="#">常见问题</a></li>
+								<li><a href="#">在线退换货</a></li>
+								<li><a href="#">在线投诉</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 主体内容 -->
+		<div class="l_main_wrap">
+			<div class="l_main clearfix">
+				<!-- banner -->
+				<img class="l_img1" src="img/login_pic.png" >
+				<!-- 登录注册 -->
+				<div class="l_main_login">
+					<!-- PC端 -->
+					<div class="l_login_pc">
+						<!-- <div class="l_login_text"> -->
+							<p class="l_login_text error1">请输入账号和密码</p>
+							<p class="l_login_text error2">用户名已存在</p>
+							<p class="l_login_text error3">您填写的账户名不存在请核对后重新填写</p>
+							<p class="l_login_text error4">账号和密码不匹配，请重新输入</p>
+							<p class="l_login_text error5">请输入密码</p>
+						<!-- </div> -->
+						<div class="clearfix">
+							<h3>1号店用户登录</h3>
+							<a class="l_login_a" href="login.html">注册新账号</a>
+						</div>
+						<!-- 表单 -->
+							<div class="l_main_form">
+								<div class="l_form_item">
+									<i class="iconfont iconhuiyuan"></i>
+									<input type="text" class="user_ipt" name="uname" id="uname" placeholder="邮箱/手机/用户名">
+								</div>
+								<div class="l_form_item">
+									<i class="iconfont iconmima"></i>
+									<input type="password" class="user_ipt" name="pwd" id="pwd" placeholder="密码">
+								</div>
+								<div class="l_form_forget clearfix">
+									<a class="l_forget_a1" href="#">自动登录</a>
+									<a class="l_forget_a2" href="#">忘记密码？</a>
+								</div>
+								<button type="button" class="l_form_a">登录</button>
+							</div>
+						<!-- 合作网站 -->
+						<div class="l_market clearfix">
+							<p>更多合作网站账号登录</p>
+							<div class="l_market_something clearfix">
+								<div class="l_market_icont clearfix">
+									<a class="iconfont iconrenren-copy" href="#"></a>
+									<a class="iconfont iconjingdong-" href="#"></a>
+									<a class="iconfont iconweibo" href="#"></a>
+									<a class="iconfont iconzhifubao" href="#"></a>
+								</div>
+								<div class="l_unfold clearfix">
+									<a class="l_unfold_a1" href="#" title="展开">更多合作网站<i class="iconfont iconweibiaoti35"></i><i class="iconfont iconshang"></i></a>
+								</div>
+							</div>
+						</div>
+						<!-- 隐藏列表 -->
+						<ul class="l_unfold_ul clearfix">
+							<li><a href="#"><i class="iconfont iconwangwang"></i>旺旺</a></li>
+							<li><a href="#"><i class="iconfont iconwangyi"></i>易物通</a></li>
+							<li><a href="#"><i class="iconfont iconbaidu"></i>百度</a></li>
+							<li><a href="#"><i class="iconfont iconwangwang"></i>旺旺</a></li>
+							<li><a href="#"><i class="iconfont iconwangwang"></i>旺旺</a></li>
+							<li><a href="#"><i class="iconfont iconwangwang"></i>旺旺</a></li>
+						</ul>
+					</div>
+					<!-- 移动端 -->
+					<div class="l_login_phone">
+						<div class="l_login_app">用<a href="#">1号店APP</a>登录</div>
+						<div class="l_login_wx"><img src="img/index_wx.png"></div>
+						<div class="l_login_break"><a href="#">刷新二维码</a></div>
+					</div>
+					<!-- 移动PC切换 -->
+					<div class="l_login_cut"><a href="#"></a></div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 底部 -->
+		<div class="l_footer_wrap">
+			<div class="l_footer">
+				<p class="l_footer_p1">沪ICP备16050468号 | 沪B2-20170039 | 营业执照</p>
+				<p class="l_footer_p2">Copyright © 1号店网上超市 2007-2018，All Rights Reserved</p>
+			</div>
+		</div>
+		
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/ajax.js"></script>
+		<script type="text/javascript">
+			
+			var btn_2 = document.querySelector('.l_form_a');//登录按钮
+			var uname = document.getElementById('uname');//用户名
+			var pwd = document.getElementById('pwd');//密码
+			var l_forget_a1 = document.querySelector('.l_forget_a1');//自动登录
+			
+			// 移动PC端切换
+			$('.l_login_cut').click(function(){
+				$('.l_login_pc').toggle();//开关	显示/隐藏
+				$('.l_login_phone').toggle();//开关	显示/隐藏
+			})
+			
+			// 更多合作网站展开
+			$('.l_unfold_a1').click(function(){
+				$('.l_unfold_ul').toggle();
+				$('.iconweibiaoti35').toggle();
+				$('.iconshang').toggle();
+			})
+			
+			// 登录
+			btn_2.onclick = function(){
+				if(uname.value == '' || pwd.value == ''){
+					alert('账号或密码不能为空');
+					return false;
+				}
+				
+				ajax({
+					type: 'get',
+					url: './login.php',
+					data: 'act=login&user='+uname.value+'&pass='+pwd.value,
+					success: function (str){
+						// console.log(str);
+						var json = JSON.parse(str);
+						if(json.err){
+							alert(json.msg);
+							localStorage.setItem(uname.value,'');
+							// window.location.href = '';
+						}else{
+							alert(json.msg);
+						}
+					},failed: function(code){
+						alert(code);
+					}
+				});
+			}
+			
+			
+		</script>
+	</body>
+</html>
