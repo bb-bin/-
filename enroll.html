@@ -152,9 +152,9 @@
 						if(json.err){
 							alert(json.msg);
 							localStorage.setItem(uname.value,'');
-							window.location.href = 'index.html';
 						}else{
 							alert(json.msg);
+							window.location.href = 'index.html';
 						}
 					},failed: function(code){
 						alert(code);
