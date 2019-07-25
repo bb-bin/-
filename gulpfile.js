@@ -31,7 +31,7 @@ gulp.task('minifyHtml',function(){
 
 //压缩图片
 gulp.task('imagemin',function(){
-    gulp.src('./img/')
+    gulp.src('./img/*.*')
     .pipe(imagemin())
     .pipe(gulp.dest('./dist/img/'))
 })
